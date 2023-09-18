@@ -1,0 +1,45 @@
+﻿/* Estilo para el modo claro (light) */
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+/* Estilo para el modo oscuro (dark) */
+.dark-mode {
+    --background-color: black;
+    --text-color: white;
+}
+
+body {
+    padding-top: 70px; /* Altura de la barra de navegación */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Estilos adicionales para otros elementos */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #f8f9fa; /* Color de fondo del menú de navegación */
+}
+
+.navbar {
+    margin-bottom: 0; /* Eliminar el espacio inferior de la barra de navegación */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    margin-right: 10px; /* Ajusta el valor según el espacio deseado entre elementos */
+}

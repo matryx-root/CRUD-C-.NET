@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPSitio.master.cs" Inherits="CRUD.WEB.MPSitio" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Tickets de Soporte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Agregar referencia a Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Agregar referencia a Bootstrap JS (opcional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Estilo personalizado -->
+   <link rel="stylesheet" type="text/css" href="~/Styles/site.css" />
+</head>
+<body>
+    <form id="form2" runat="server">
+        <header>
+            <img src="./static/LOGO.png" alt="Logo de la Empresa" class="img-fluid" style="width: 200px; height: 200px; float: left;" />
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <asp:Menu ID="menuNav" runat="server" Orientation="Horizontal" CssClass="navbar-nav">
+                            <StaticMenuItemStyle CssClass="menu-item" />
+                            <Items>
+                                <asp:MenuItem Text="Home" NavigateUrl="~/Home.aspx" /> 
+                                <asp:MenuItem Text="Crear Ticket" NavigateUrl="~/CrearTicket.aspx" /> 
+                                <asp:MenuItem Text="Listar Todos" NavigateUrl="~/ListarTickets.aspx" />
+                            </Items>
+                </asp:Menu>
+
+
+
+                <div class="navbar-form navbar-right">
+                    <div class="form-group">
+                        
+                    
+
+                    <asp:TextBox ID="txtBusquedaNombre" runat="server" CssClass="form-control" placeholder="Buscar por nombre" />
+                    <asp:TextBox ID="txtBusquedaDescripcion" runat="server" CssClass="form-control" placeholder="Buscar por descripción" />
+                    <asp:Button ID="Button1" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" CssClass="btn btn-primary" />
+                        </div>
+                   
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
