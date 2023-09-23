@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+
+
 namespace CRUD.BUSINESS
 {
     public static class TicketControlador

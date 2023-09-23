@@ -14,6 +14,10 @@
                     <asp:RegularExpressionValidator runat="server" ID="revNombreCliente" ControlToValidate="txtNombreCliente"
                         ValidationExpression="^.{5,}$" ErrorMessage="El nombre debe tener al menos 5 caracteres de largo" Display="Dynamic"
                         ForeColor="Red" ValidationGroup="vgCrearTicket" />
+                    <asp:CustomValidator runat="server" ID="cvNombreCliente" ControlToValidate="txtNombreCliente"
+                        ErrorMessage="El nombre debe tener al menos 5 caracteres de largo" ForeColor="Red"
+                        OnServerValidate="ValidateNombreCliente" Display="Dynamic" ValidationGroup="vgCrearTicket" />
+
                 </div>
                 <div class="form-group">
                     <asp:Label runat="server" Text="RUT del Cliente:" AssociatedControlID="txtRutCliente" />
@@ -49,6 +53,11 @@
                     <asp:RegularExpressionValidator runat="server" ID="revNombreProducto" ControlToValidate="txtNombreProducto"
                         ValidationExpression="^.{10,}$" ErrorMessage="El nombre del producto debe tener al menos 10 caracteres de largo" Display="Dynamic"
                         ForeColor="Red" ValidationGroup="vgCrearTicket" />
+                    <asp:CustomValidator runat="server" ID="cvNombreProducto" ControlToValidate="txtNombreProducto"
+                        ErrorMessage="El nombre del producto debe tener al menos 10 caracteres de largo" ForeColor="Red"
+                        OnServerValidate="ValidateNombreProducto" Display="Dynamic" ValidationGroup="vgCrearTicket" />
+
+
                 </div>
                 <div class="form-group">
                     <asp:Label runat="server" Text="Descripción del Ticket:" AssociatedControlID="txtDescripcion" />
@@ -58,6 +67,10 @@
                     <asp:RegularExpressionValidator runat="server" ID="revDescripcion" ControlToValidate="txtDescripcion"
                         ValidationExpression="^.{10,}$" ErrorMessage="La descripción debe tener al menos 10 caracteres de largo" Display="Dynamic"
                         ForeColor="Red" ValidationGroup="vgCrearTicket" />
+                    <asp:CustomValidator runat="server" ID="cvDescripcionProducto" ControlToValidate="txtDescripcion"
+                        ErrorMessage="La descripción del producto debe tener al menos 10 caracteres de largo" ForeColor="Red"
+                        OnServerValidate="ValidateDescripcionProducto" Display="Dynamic" ValidationGroup="vgCrearTicket" />
+
                 </div>
                 <div class="form-group">
                     <asp:Label runat="server" Text="Tipo de Cliente:" AssociatedControlID="ddlTipoCliente" />

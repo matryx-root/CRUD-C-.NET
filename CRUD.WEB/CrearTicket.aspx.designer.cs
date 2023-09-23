@@ -51,6 +51,15 @@ namespace CRUD.WEB
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revNombreCliente;
 
         /// <summary>
+        /// cvNombreCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvNombreCliente;
+
+        /// <summary>
         /// txtRutCliente control.
         /// </summary>
         /// <remarks>
@@ -150,6 +159,15 @@ namespace CRUD.WEB
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revNombreProducto;
 
         /// <summary>
+        /// cvNombreProducto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvNombreProducto;
+
+        /// <summary>
         /// txtDescripcion control.
         /// </summary>
         /// <remarks>
@@ -175,6 +193,15 @@ namespace CRUD.WEB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revDescripcion;
+
+        /// <summary>
+        /// cvDescripcionProducto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvDescripcionProducto;
 
         /// <summary>
         /// ddlTipoCliente control.
